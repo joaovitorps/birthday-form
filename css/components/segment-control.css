@@ -1,0 +1,49 @@
+.segment-control {
+  height: 3rem;
+  padding: 0.25rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    padding: 0.25rem;
+    position: relative;
+    flex: 1;
+    align-content: center;
+
+    border: 1px solid transparent;
+
+    &:has(input:not(:checked)):hover {
+      border-radius: 0.5rem;
+      border: 1px solid var(--brand-light);
+    }
+
+    &:has(input:checked) {
+      border-radius: 0.3125rem;
+      background-color: var(--shape-button);
+      color: var(--text-heading);
+
+      svg > path {
+        fill: var(--brand-light);
+      }
+    }
+
+    & > label {
+      display: flex;
+      column-gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > input[type="radio"] {
+      all: unset;
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+    }
+  }
+}

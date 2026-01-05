@@ -1,0 +1,33 @@
+.layout {
+  display: grid;
+  grid-template-columns: 25rem 51.25rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  justify-content: center;
+}
+
+.side-image {
+  height: calc(100vh - calc(1.25rem * 2));
+  border-radius: 0.75rem;
+  background: center/cover no-repeat url(/assets/Background.png);
+
+  padding: 2rem 2rem;
+  margin-left: auto;
+
+  & > img {
+    width: 2.865625rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.invite-container {
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+  padding-block: 5rem;
+
+  & > * {
+    width: 35rem;
+    margin-inline: auto;
+  }
+}

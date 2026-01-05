@@ -1,0 +1,33 @@
+.invite-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.form-input-wrapper {
+  & > label {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  &:has(:invalid) > span.error {
+    display: flex;
+    column-gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &:has(:valid) > span.error {
+    display: none;
+  }
+}
+
+#about-event {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  & > div:nth-child(2),
+  & > div:last-child {
+    grid-column: 1/3;
+  }
+}

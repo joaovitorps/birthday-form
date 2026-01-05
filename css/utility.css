@@ -1,0 +1,19 @@
+.title-logo {
+  font: var(--title-logo);
+}
+
+.title-md {
+  font: var(--title-md);
+}
+
+.color-accent-pink {
+  color: var(--pink);
+}
+
+.mb-4 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-40 {
+  margin-bottom: 2.5rem;
+}

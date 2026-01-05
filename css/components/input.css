@@ -1,0 +1,30 @@
+input,
+textarea {
+  appearance: none;
+
+  width: 100%;
+
+  font: inherit;
+  color: var(--input-placeholder);
+
+  background-color: var(--input-base);
+
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+
+  padding-block: 0.8125rem;
+  padding-left: 1rem;
+
+  &:focus {
+    outline: 1px solid var(--brand-light);
+  }
+
+  &:invalid {
+    border-color: var(--danger);
+    outline: none;
+  }
+
+  &[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
