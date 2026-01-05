@@ -6,8 +6,24 @@
   font: var(--title-md);
 }
 
+.title-sm {
+  font: var(--title-sm);
+}
+
 .color-accent-pink {
   color: var(--pink);
+}
+
+.text-heading {
+  color: var(--text-heading);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .mb-4 {

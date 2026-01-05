@@ -1,0 +1,79 @@
+.color-selection {
+  position: relative;
+  border: 0.125rem solid transparent;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 5rem;
+  background-color: var(--shape-button);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 5rem;
+    background-color: var(--shape-background);
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
+  &:has(:checked) {
+    border-color: var(--brand-light);
+  }
+
+  & > input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &.brand-light::after {
+    background-color: var(--brand-light);
+  }
+
+  &.fuchsia::after {
+    background-color: var(--fuchsia);
+  }
+
+  &.pink::after {
+    background-color: var(--pink);
+  }
+
+  &.danger::after {
+    background-color: var(--danger);
+  }
+
+  &.orange::after {
+    background-color: var(--orange);
+  }
+
+  &.yellow::after {
+    background-color: var(--yellow);
+  }
+
+  &.lime::after {
+    background-color: var(--lime);
+  }
+
+  &.green::after {
+    background-color: var(--green);
+  }
+
+  &.navy::after {
+    background-color: var(--navy);
+  }
+
+  &.cyan::after {
+    background-color: var(--cyan);
+  }
+}
