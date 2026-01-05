@@ -1,0 +1,41 @@
+.topic-selection-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 8.375rem);
+  gap: 0.5rem;
+}
+
+.topic-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+
+  height: 6.4375rem;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: var(--shape-button);
+  outline: 1px solid var(--input-stroke);
+  border: 0.125rem solid transparent;
+
+  padding: 0.25rem 0.25rem 0.5rem;
+
+  text-align: center;
+  color: var(--text-heading);
+  font: var(--text-sm);
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
+  &:focus-within,
+  &:has(:checked) {
+    border-color: var(--brand-light);
+  }
+
+  & > img {
+    width: 7.875rem;
+    aspect-ratio: 16/9;
+    height: 4rem;
+    object-fit: cover;
+  }
+}

@@ -28,3 +28,12 @@ textarea {
     opacity: 0;
   }
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+  all: unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 1;
+}

@@ -1,10 +1,10 @@
 .layout {
   display: grid;
-  grid-template-columns: 25rem 51.25rem;
+  grid-template-columns: 30% 70%;
   gap: 1.25rem;
   padding: 1.25rem;
   justify-content: center;
-  height: calc(100vh - calc(1.25rem * 2));
+  height: calc(100vh);
 }
 
 .side-image {
@@ -32,4 +32,22 @@
   }
 
   overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: inherit;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--shape-background);
+    border-radius: 0.75rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--shape-body);
+    border-radius: 0.75rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--shape-hover);
+  }
 }

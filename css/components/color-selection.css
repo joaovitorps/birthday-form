@@ -21,20 +21,14 @@
     background-color: var(--shape-background);
   }
 
+  &:focus-within,
   &:hover {
     background-color: var(--shape-hover);
   }
 
+  &:focus-within,
   &:has(:checked) {
     border-color: var(--brand-light);
-  }
-
-  & > input {
-    all: unset;
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
-    z-index: 1;
   }
 
   &.brand-light::after {

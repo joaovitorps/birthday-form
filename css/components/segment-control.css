@@ -17,6 +17,7 @@
 
     border: 1px solid transparent;
 
+    &:has(input:not(:checked)):focus-within,
     &:has(input:not(:checked)):hover {
       border-radius: 0.5rem;
       border: 1px solid var(--brand-light);
@@ -37,13 +38,6 @@
       column-gap: 0.5rem;
       justify-content: center;
       align-items: center;
-    }
-
-    & > input[type="radio"] {
-      all: unset;
-      position: absolute;
-      inset: 0;
-      cursor: pointer;
     }
   }
 }

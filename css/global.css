@@ -66,7 +66,7 @@ body {
   font: var(--text-md);
   color: var(--text-body);
   background-color: var(--shape-background);
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 fieldset {
