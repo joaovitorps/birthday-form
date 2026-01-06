@@ -5,6 +5,9 @@
 }
 
 .form-input-wrapper {
+  display: flex;
+  flex-direction: column;
+
   & > label {
     display: inline-block;
     margin-bottom: 0.75rem;

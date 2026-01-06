@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 31.25% 64.0625%;
   gap: 1.25rem;
   padding: 1.25rem;
   justify-content: center;
