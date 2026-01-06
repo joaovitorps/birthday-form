@@ -1,0 +1,52 @@
+.switch-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+
+  & > span {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 4rem;
+    height: 2rem;
+
+    border-radius: 5rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.25rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 5rem;
+      background-color: var(--input-stroke);
+    }
+  }
+
+  &:has(:checked) > span {
+    background-color: var(--brand-light);
+  }
+
+  &:has(:checked) > span::after {
+    background-color: var(--text-heading);
+    left: unset;
+    right: 0.25rem;
+  }
+
+  & > label::after,
+  & > label::before {
+    cursor: pointer;
+  }
+
+  & > label::after {
+    content: "Escuro";
+  }
+
+  &:has(:checked) > label::after {
+    content: "Claro";
+  }
+}
