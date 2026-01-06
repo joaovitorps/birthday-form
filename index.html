@@ -39,12 +39,7 @@
                 id="title"
                 name="title"
                 placeholder="Event name"
-                required
               />
-              <span class="error">
-                <img src="/assets/icons/circle-alert-danger.svg" alt="" />
-                <p>Required field</p>
-              </span>
             </div>
             <div class="form-input-wrapper">
               <label for="date-start">Start</label>
@@ -234,14 +229,89 @@
             <div class="form-input-wrapper">
               <label for="cover-photo">Cover photo</label>
               <div class="file-input">
-                <span>
+                <button class="button button-secondary" type="button">
                   <img src="/assets/icons/upload.svg" alt="" />
-                  <p>Select</p>
-                </span>
+                  <span>Select</span>
+                </button>
                 <input type="file" name="cover-photo" id="cover-photo" />
               </div>
             </div>
           </fieldset>
+          <fieldset id="contact">
+            <legend>
+              <img src="/assets/icons/contact.svg" alt="" />
+              <h3 class="text-heading title-sm">Contact</h3>
+            </legend>
+            <div class="form-input-wrapper">
+              <label for="place">Place</label>
+              <input
+                type="text"
+                id="place"
+                name="place"
+                placeholder="Link or address"
+                required
+              />
+              <span class="error">
+                <img src="/assets/icons/circle-alert-danger.svg" alt="" />
+                <p>Required field</p>
+              </span>
+            </div>
+            <div class="form-input-wrapper">
+              <label for="place">Place</label>
+              <input
+                type="text"
+                id="place"
+                name="place"
+                placeholder="Link or address"
+              />
+            </div>
+            <div class="form-input-wrapper">
+              <label for="place">Place</label>
+              <input
+                type="text"
+                id="place"
+                name="place"
+                placeholder="Link or address"
+              />
+            </div>
+          </fieldset>
+          <fieldset id="footer">
+            <div class="checkbox-wrapper">
+              <div class="checkbox">
+                <span>
+                  <input
+                    type="checkbox"
+                    name="accept-terms"
+                    id="accept-terms"
+                  />
+                </span>
+                <label for="accept-terms"
+                  >Li e concordo com os <a href="#">Termos e Condições</a> e com
+                  a <a href="#">Política de Privacidade</a></label
+                >
+              </div>
+              <div class="checkbox">
+                <span>
+                  <input type="checkbox" name="email-promo" id="email-promo" />
+                </span>
+                <label for="email-promo"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
+              </div>
+              <div class="checkbox">
+                <span>
+                  <input type="checkbox" name="sms-promo" id="sms-promo" />
+                </span>
+                <label for="sms-promo"
+                  >Aceito receber atualizações e promoções por SMS</label
+                >
+              </div>
+            </div>
+          </fieldset>
+          <button class="button button-primary" type="submit">
+            <img src="/assets/icons/ticket.svg" alt="" />
+            <span>Generate invite</span>
+          </button>
         </form>
       </div>
     </main>

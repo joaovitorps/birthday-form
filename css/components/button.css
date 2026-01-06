@@ -1,0 +1,43 @@
+.button {
+  all: unset;
+
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+
+  color: var(--text-heading);
+  font: var(--text-md-strong);
+
+  cursor: pointer;
+}
+
+.button.button-primary {
+  padding: 0.25rem 1.25rem;
+  column-gap: 0.75rem;
+
+  min-width: 9.125rem;
+  height: 3rem;
+
+  background-color: var(--brand-dark);
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
+
+.button.button-secondary {
+  padding: 0.25rem 0.75rem;
+  column-gap: 0.5rem;
+
+  min-width: 6.8125rem;
+  height: 2.5rem;
+
+  background-color: var(--shape-button);
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
